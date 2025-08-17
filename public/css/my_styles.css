@@ -1,0 +1,27 @@
+  .button {
+    border: 1px red dashed;
+    border-radius: 10px;
+    background-color: rgba(116, 199, 255, 1);
+    padding: 10px 10px;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+  
+  .button span {
+    font-weight: bold;
+    color: white;
+  }
+
+  .button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+
+  }
+
+  .button:hover {
+    background-color: darkblue;
+
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
