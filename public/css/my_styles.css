@@ -1,4 +1,5 @@
-  .button {
+  .button-blue {
+    color: white;
     border: 1px red dashed;
     border-radius: 10px;
     background-color: rgba(116, 199, 255, 1);
@@ -8,17 +9,17 @@
 
   }
   
-  .button span {
+  .button-blue span {
     font-weight: bold;
     color: white;
   }
 
-  .button:active {
+  .button-blue:active {
     box-shadow: 2px 2px 5px #fc894d;
 
   }
 
-  .button:hover {
+  .button-blue:hover {
     background-color: darkblue;
 
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
