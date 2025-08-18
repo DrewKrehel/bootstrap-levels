@@ -2,8 +2,6 @@
   <a href="https://bootstrap-levels.matchthetarget.com/levels/08_toast" target="_blank">Target</a>
 </p>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Voluptatem temporibus dolores, eveniet voluptate odio dicta velit ducimus iste, officia facere suscipit quibusdam optio deleniti asperiores consequuntur blanditiis. Obcaecati?</p>
-
 <!-- Add your code to create a toast here. -->
 <div class="toast-container top-0 end-0 me-2 mt-2">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -30,3 +28,15 @@
     </div>
   </div>
 </div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Voluptatem temporibus dolores, eveniet voluptate odio dicta velit ducimus iste, officia facere suscipit quibusdam optio deleniti asperiores consequuntur blanditiis. Obcaecati?</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
+  }, false);
+</script>
